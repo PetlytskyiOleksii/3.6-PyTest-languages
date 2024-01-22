@@ -12,6 +12,3 @@ def test_to_check_if_add_to_basket_button_present(browser):
     expected_result = WebDriverWait(browser, 10).until(ec.presence_of_element_located(add_product_button)).text
     print(expected_result)
     assert expected_result == 'Añadir al carrito'
-
-
-
